@@ -140,3 +140,21 @@ scene.setBackgroundImage(img`
     `)
 controller.moveSprite(Pacman)
 Pacman.setFlag(SpriteFlag.StayInScreen, true)
+let ghost = sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . 9 9 9 9 9 . . . . . . 
+    . . . 9 9 9 9 9 9 9 9 9 . . . . 
+    . . 9 9 9 9 9 9 9 9 9 9 9 . . . 
+    . 9 9 9 9 9 9 9 9 9 9 9 9 9 . . 
+    . 9 9 9 1 f 9 9 9 1 f 9 9 9 . . 
+    . 9 9 9 f f 9 9 9 f f 9 9 9 . . 
+    . 9 9 9 9 9 9 9 9 9 9 9 9 9 . . 
+    . 9 9 9 9 f 1 f f 1 f 9 9 9 . . 
+    . 9 9 9 f f f f f f f 9 9 9 . . 
+    . 9 9 9 f f f f f f f 9 9 9 . . 
+    . 9 9 9 f f 2 2 2 2 f 9 9 9 . . 
+    . 9 9 9 9 9 9 9 9 9 9 9 9 9 . . 
+    . 9 9 9 9 9 9 9 9 9 9 9 9 9 . . 
+    . 9 . 9 . 9 . 9 . 9 . 9 . 9 . . 
+    `, SpriteKind.Enemy)
